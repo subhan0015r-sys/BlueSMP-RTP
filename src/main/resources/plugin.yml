@@ -1,0 +1,23 @@
+name: BlueSMPRTP
+version: '1.0.0'
+main: com.bluesmp.rtp.BlueSMPRTP
+api-version: '26.2'
+authors: [BlueSMP]
+description: VR-Style 3D Floating RTP Menu for BlueSMP
+
+commands:
+  rtp:
+    description: Opens the 3D VR Random Teleport Menu
+    usage: /<command> [reload]
+    aliases: [wild, randomtp]
+
+permissions:
+  bluesmp.rtp.use:
+    description: Allows opening and using the VR RTP menu
+    default: true
+  bluesmp.rtp.admin:
+    description: Allows reloading the plugin configuration
+    default: op
+  bluesmp.rtp.bypass.cooldown:
+    description: Bypasses the RTP cooldown timer
+    default: op
